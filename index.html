@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Festejando a Conexão Campo e Cidade</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo-Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Campo & Cidade</h1>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#campo">Campo</a></li>
-        <li><a href="#cidade">Cidade</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="cabecalho-titulo">Festejando a Conexão Campo-Cidade</h1>
+            <p class="cabecalho-subtitulo">Celebrando a interdependência que alimenta e desenvolve nosso país</p>
+        </div>
+    </header>
+
+    <nav class="navegacao">
+        <ul class="navegacao-lista container">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#importancia">Importância</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h2>Festejando a Conexão</h2>
-      <p>Celebrando os laços entre o rural e o urbano</p>
-    </div>
-  </section>
+    <main class="principal">
+        <section id="sobre" class="secao sobre">
+            <div class="container">
+                <h2 class="secao-titulo">Sobre a Conexão</h2>
+                <div class="sobre-conteudo">
+                    <img src="./festaTipica.jpg" alt="Conexão campo-cidade" class="sobre-imagem">
+                    <div class="sobre-texto">
+                        <p>A relação entre o campo e a cidade é uma dança essencial para o desenvolvimento sustentável do nosso país. Enquanto o campo produz os alimentos e matérias-primas, a cidade oferece tecnologia, serviços e mercados consumidores.</p>
+                        <p>Esta plataforma celebra essa conexão vital, destacando histórias, iniciativas e pessoas que constroem pontes entre esses dois mundos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="campo" class="content">
-    <h2>O Valor do Campo</h2>
-    <p>O campo é a base da nossa existência. É onde a terra gera alimento, cultura e tradição. Cada plantio carrega história e cada colheita sustenta a cidade.</p>
-    <img src="./rural1.jpg" alt="Imagem do campo">
-  </section>
+        <section id="importancia" class="secao importancia">
+            <div class="container">
+                <h2 class="secao-titulo">Por que é importante?</h2>
+                <div class="importancia-itens">
+                    <div class="importancia-item">
+                        <h3>Alimentação</h3>
+                        <p>O campo abastece as cidades com alimentos frescos e nutritivos, garantindo a segurança alimentar da população urbana.</p>
+                    </div>
+                    <div class="importancia-item">
+                        <h3>Economia</h3>
+                        <p>A produção agrícola movimenta cadeias produtivas que geram empregos tanto no campo quanto nas cidades.</p>
+                    </div>
+                    <div class="importancia-item">
+                        <h3>Cultura</h3>
+                        <p>Tradições rurais e urbanas se misturam, criando uma identidade cultural rica e diversificada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="cidade" class="content alt">
-    <h2>A Vida Urbana</h2>
-    <p>Nas cidades, ideias florescem e tecnologias se desenvolvem. O urbano traz inovação, mas depende profundamente do trabalho realizado no campo.</p>
-    <img src="./urbano1.webp" alt="Imagem da cidade">
-  </section>
+        <section id="galeria" class="secao galeria">
+            <div class="container">
+                <h2 class="secao-titulo">Galeria</h2>
+                <div class="galeria-fotos">
+                    <img src="./rural1.jpg" alt="Cena do campo" class="galeria-foto">
+                    <img src="./urbano1.webp" alt="Cena da cidade" class="galeria-foto">
+                    <img src="./rioBom.jpeg" alt="rio bom" class="galeria-foto">
+                </div>
+            </div>
+        </section>
 
-  <section id="galeria" class="gallery">
-    <h2>Galeria</h2>
-    <div class="gallery-grid">
-      <img src="./festaTipica.jpg" alt="Festa típica">
-      <img src="./rural2.webp" alt="Campo">
-      <img src="./urbano2.webp" alt="Cidade">
-    </div>
-  </section>
+    </main>
 
-  <section id="contato" class="content">
-    <h2>Contato</h2>
-    <p>Quer saber mais? Fale conosco!</p>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
-      <textarea placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2023 Festejando a Conexão Campo-Cidade | Desenvolvido com ❤️</p>
+        </div>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 - Conexão Campo e Cidade</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
